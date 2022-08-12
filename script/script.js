@@ -17,7 +17,7 @@ let totalCounterOne = 0,
     currentCounter = 0,
     gameEnd = false,
     playerOnePrompt = prompt("Enter First Player Name...", "Okba"),
-    playerTwoPrompt = prompt("Enter First Player Name...", "Youcef");
+    playerTwoPrompt = prompt("Enter Second Player Name...", "Youcef");
 
 winnerSound.volume = 1;
 
@@ -54,7 +54,7 @@ function restartGame() {
     section2.classList.remove("active");
     removeWinner();
     playerOnePrompt = prompt("Enter First Player Name...", "Okba");
-    playerTwoPrompt = prompt("Enter First Player Name...", "Youcef");
+    playerTwoPrompt = prompt("Enter Second Player Name...", "Youcef");
     checkPrompt();
     totalCounterOne = totalCounterTwo = currentCounter = current_1.textContent = current_2.textContent = total_1.textContent = total_2.textContent = 0;
     gameEnd = false;
